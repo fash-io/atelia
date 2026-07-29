@@ -1,0 +1,95 @@
+@keyframes menu-item-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-menu-item {
+  animation: menu-item-in 0.35s var(--ease-out-soft) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-menu-item {
+    animation: none;
+  }
+}
+
+@keyframes heart-pop {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  30% {
+    transform: scale(1.35) rotate(-10deg);
+  }
+  50% {
+    transform: scale(0.92) rotate(8deg);
+  }
+  70% {
+    transform: scale(1.12) rotate(-4deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.animate-heart-pop {
+  animation: heart-pop 0.55s var(--ease-out-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-heart-pop {
+    animation: none;
+  }
+}
+
+@keyframes bookmark-drop {
+  0% {
+    transform: translateY(-45%) scaleY(0.7);
+  }
+  45% {
+    transform: translateY(8%) scaleY(1.18);
+  }
+  70% {
+    transform: translateY(-3%) scaleY(0.94);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+.animate-bookmark-drop {
+  animation: bookmark-drop 0.5s var(--ease-out-soft);
+  transform-origin: top center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bookmark-drop {
+    animation: none;
+  }
+}
+
+@keyframes card-rise {
+  from {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-card-rise {
+  animation: card-rise 0.6s var(--ease-out-soft) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-card-rise {
+    animation: none;
+  }
+}

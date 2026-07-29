@@ -1,0 +1,192 @@
+@import 'tailwindcss' source(none);
+@source "../src";
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Atelier — design system
+ * Light editorial gallery aesthetic. Brand accent: #CDDD00 (lime).
+ * Ink: #121212. Paper: #FAFAF7.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-lime: var(--lime);
+  --color-lime-soft: var(--lime-soft);
+
+  --font-display: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --shadow-soft: 0 1px 2px oklch(0 0 0 / 0.04), 0 8px 30px oklch(0 0 0 / 0.06);
+  --shadow-lift: 0 2px 4px oklch(0 0 0 / 0.06), 0 20px 50px oklch(0 0 0 / 0.12);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Brand */
+  --ink: oklch(0.18 0.005 270); /* #121212 */
+  --paper: oklch(0.985 0.005 95); /* warm off-white */
+  --lime: oklch(0.92 0.18 115); /* #CDDD00 */
+  --lime-soft: oklch(0.96 0.09 115);
+  --brown: #f4ede4;
+  --background: var(--paper);
+  --foreground: var(--ink);
+
+  --card: oklch(1 0 0);
+  --card-foreground: var(--ink);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--ink);
+
+  --primary: var(--lime);
+  --primary-foreground: var(--ink);
+
+  --secondary: oklch(0.96 0.005 95);
+  --secondary-foreground: var(--ink);
+
+  --muted: oklch(0.955 0.004 95);
+  --muted-foreground: oklch(0.45 0.01 270);
+
+  --accent: oklch(0.94 0.005 95);
+  --accent-foreground: var(--ink);
+
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.9 0.005 95);
+  --input: oklch(0.9 0.005 95);
+  --ring: var(--ink);
+}
+
+.dark {
+  --background: var(--ink);
+  --foreground: var(--paper);
+  --card: oklch(0.22 0.005 270);
+  --card-foreground: var(--paper);
+  --popover: oklch(0.22 0.005 270);
+  --popover-foreground: var(--paper);
+  --primary: var(--lime);
+  --primary-foreground: var(--ink);
+  --secondary: oklch(0.26 0.005 270);
+  --secondary-foreground: var(--paper);
+  --muted: oklch(0.24 0.005 270);
+  --muted-foreground: oklch(0.7 0.01 270);
+  --accent: oklch(0.26 0.005 270);
+  --accent-foreground: var(--paper);
+  --border: oklch(1 0 0 / 0.1);
+  --input: oklch(1 0 0 / 0.15);
+  --ring: var(--lime);
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+  }
+
+  @font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('./assets/fonts/Inter_Tight/InterTight-VariableFont_wght.ttf') format('woff2');
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    font-weight: 500;
+  }
+
+  ::selection {
+    background: var(--lime);
+    color: var(--ink);
+  }
+}
+
+@layer components {
+  .display-xl {
+    font-family: var(--font-display);
+    font-size: clamp(2.75rem, 7vw, 6.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    font-weight: 400;
+  }
+  .display-lg {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4.5vw, 3.75rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted-foreground);
+  }
+  .lime-pill {
+    background: var(--lime);
+    color: var(--ink);
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+}

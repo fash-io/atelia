@@ -1,0 +1,148 @@
+.blob.all {
+  border-top-left-radius: 44% 58%;
+  border-top-right-radius: 56% 48%;
+  border-bottom-right-radius: 60% 52%;
+  border-bottom-left-radius: 40% 42%;
+}
+.blob.default {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+.blob.architecture {
+  border-top-left-radius: 42% 45%;
+  border-top-right-radius: 58% 45%;
+  border-bottom-right-radius: 65% 55%;
+  border-bottom-left-radius: 35% 55%;
+}
+.blob.interior_design {
+  border-top-left-radius: 60% 50%;
+  border-top-right-radius: 40% 60%;
+  border-bottom-right-radius: 30% 40%;
+  border-bottom-left-radius: 70% 50%;
+}
+.blob.interior_decor {
+  border-top-left-radius: 35% 60%;
+  border-top-right-radius: 65% 40%;
+  border-bottom-right-radius: 55% 60%;
+  border-bottom-left-radius: 45% 40%;
+}
+.blob.event_design {
+  border-top-left-radius: 70% 35%;
+  border-top-right-radius: 30% 65%;
+  border-bottom-right-radius: 46% 35%;
+  border-bottom-left-radius: 54% 65%;
+}
+.blob.civil_engineering {
+  border-top-left-radius: 48% 62%;
+  border-top-right-radius: 52% 38%;
+  border-bottom-right-radius: 62% 58%;
+  border-bottom-left-radius: 38% 42%;
+}
+.blob.fine_art {
+  border-top-left-radius: 55% 40%;
+  border-top-right-radius: 45% 60%;
+  border-bottom-right-radius: 40% 55%;
+  border-bottom-left-radius: 60% 45%;
+}
+.blob.craft {
+  border-top-left-radius: 38% 55%;
+  border-top-right-radius: 62% 45%;
+  border-bottom-right-radius: 58% 65%;
+  border-bottom-left-radius: 42% 35%;
+}
+.blob.sculpture {
+  border-top-left-radius: 65% 45%;
+  border-top-right-radius: 35% 55%;
+  border-bottom-right-radius: 50% 40%;
+  border-bottom-left-radius: 50% 60%;
+}
+.blob.photography {
+  border-top-left-radius: 40% 65%;
+  border-top-right-radius: 60% 35%;
+  border-bottom-right-radius: 45% 50%;
+  border-bottom-left-radius: 55% 50%;
+}
+.blob.landscape_design {
+  border-top-left-radius: 58% 40%;
+  border-top-right-radius: 42% 50%;
+  border-bottom-right-radius: 68% 60%;
+  border-bottom-left-radius: 32% 40%;
+}
+.blob.fashion_design {
+  border-top-left-radius: 45% 55%;
+  border-top-right-radius: 55% 65%;
+  border-bottom-right-radius: 35% 35%;
+  border-bottom-left-radius: 65% 45%;
+}
+.blob.tailoring {
+  border-top-left-radius: 62% 42%;
+  border-top-right-radius: 38% 58%;
+  border-bottom-right-radius: 55% 48%;
+  border-bottom-left-radius: 45% 52%;
+}
+.blob.makeup_artistry {
+  border-top-left-radius: 50% 60%;
+  border-top-right-radius: 50% 40%;
+  border-bottom-right-radius: 65% 45%;
+  border-bottom-left-radius: 35% 55%;
+}
+.blob.aesthetics {
+  border-top-left-radius: 35% 50%;
+  border-top-right-radius: 65% 50%;
+  border-bottom-right-radius: 40% 65%;
+  border-bottom-left-radius: 60% 35%;
+}
+.blob.hair_styling {
+  border-top-left-radius: 68% 38%;
+  border-top-right-radius: 32% 62%;
+  border-bottom-right-radius: 55% 42%;
+  border-bottom-left-radius: 45% 58%;
+}
+.blob.architect {
+  border-top-left-radius: 46% 55%;
+  border-top-right-radius: 54% 50%;
+  border-bottom-right-radius: 40% 45%;
+  border-bottom-left-radius: 60% 50%;
+}
+.blob.designer {
+  border-top-left-radius: 58% 42%;
+  border-top-right-radius: 42% 58%;
+  border-bottom-right-radius: 52% 65%;
+  border-bottom-left-radius: 48% 35%;
+}
+.blob.builder {
+  border-top-left-radius: 40% 48%;
+  border-top-right-radius: 60% 52%;
+  border-bottom-right-radius: 55% 40%;
+  border-bottom-left-radius: 45% 60%;
+}
+.blob.photographer {
+  border-top-left-radius: 62% 55%;
+  border-top-right-radius: 38% 45%;
+  border-bottom-right-radius: 48% 62%;
+  border-bottom-left-radius: 52% 38%;
+}
+.blob.engineer {
+  border-top-left-radius: 44% 40%;
+  border-top-right-radius: 56% 60%;
+  border-bottom-right-radius: 62% 48%;
+  border-bottom-left-radius: 38% 52%;
+}
+.blob.artist {
+  border-top-left-radius: 65% 50%;
+  border-top-right-radius: 35% 42%;
+  border-bottom-right-radius: 45% 58%;
+  border-bottom-left-radius: 55% 45%;
+}
+.blob.studio {
+  border-top-left-radius: 50% 62%;
+  border-top-right-radius: 50% 38%;
+  border-bottom-right-radius: 38% 50%;
+  border-bottom-left-radius: 62% 50%;
+}
+
+.blob {
+  transition: all 0.2s ease-out;
+}
